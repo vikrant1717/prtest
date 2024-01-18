@@ -3,6 +3,7 @@ public class Commit17 {
 	public static void main(String args[]) {
 		try {
 			System.out.println("Screenshot taken for test : ");
+			System.out.println("print the value")
 		} catch (Exception e) {
 			System.out.println("Exception " + e.getMessage());
 		}
