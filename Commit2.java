@@ -6,8 +6,8 @@ public class Commit2 {
 		} catch (Exception e) {
 			System.out.println("Exception " + e.getMessage());
 			//System.out.println("Exception " + e.getMessage());
-			//System.out.println("Exception " + e.getMessage());
-			//System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
 		}
 	}
 }
