@@ -18,7 +18,7 @@ public class LineCounter {
             }
             System.out.println("Total number of lines: " + lineCount);
         } catch (IOException e) {
-            System.out.println("Error reading the file: " + e.getMessage());
+           // System.out.println("Error reading the file: " + e.getMessage());
         }
     }
 }
