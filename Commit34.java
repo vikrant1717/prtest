@@ -8,6 +8,9 @@ public class Commit34 {
 				System.out.println("Exception " + e.getMessage());
 				System.out.println("Exception " + e.getMessage());
 				System.out.println("Exception " + e.getMessage());
+                                System.out.println("Exception " + e.getMessage());
+				System.out.println("Exception " + e.getMessage());
+				System.out.println("Exception " + e.getMessage());
 		}
 	}
 }
