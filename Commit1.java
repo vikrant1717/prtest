@@ -10,6 +10,10 @@ public class Commit1 {
 			System.out.println("Exception " + e.getMessage());
 			System.out.println("Exception " + e.getMessage());
 			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
 		}
 	}
 }
