@@ -1,0 +1,1 @@
+"package com.example.math;\n\npublic class Multiply {\n    public int multiply(int a
