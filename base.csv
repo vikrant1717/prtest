@@ -1,0 +1,38 @@
+ public String getIssueCount(String baseurl,String repoUID,int prID,String sessionId,int repoID) throws InterruptedException {
+
+
+        System.out.println("repoId here is :" + repoID);
+
+        String apiUrl = baseurl + "/api/v1/repositories/" + repoUID + "/pullrequests/" + prID + "/details"
+                + "?repositoryId=" + repoID + "&sessionId=" + sessionId;
+
+
+        String bearerToken = values.get("bearerToken");
+
+
+        if (bearerToken == null || bearerToken.isEmpty()) {
+            System.out.println("Error: Bearer token is missing.");
+            return null;
+        }
+
+        try {
+
+            Response response = RestAssured.given()
+                    .header("Authorization", bearerToken)
+                    .contentType("application/json")
+                    .log().all()
+                    .get(apiUrl);
+
+
+            if (response.getStatusCode() == 200 || response.getStatusCode() == 202) {
+
+                System.out.println("Fetched code issues are : " + response.asString());
+            } else {
+                System.out.println("Failed to fetch code issues " + response.getStatusCode());
+            }
+        } catch (Exception e) {
+            System.out.println("Exception  " + e.getMessage());
+        }
+        return null;
+
+    }
