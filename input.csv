@@ -1,0 +1,2 @@
+scm,baseurl,token,repourl,usernmae,password,scmApiBaseUrl,repoFullName,branch
+github,http://18.156.1.119:3000,tk,https://github.com/vikrant1717/prtest.git,saurabh.pa+old@browserstack.com,gamma123,https://api.github.com,vikrant1717/prtest,main
