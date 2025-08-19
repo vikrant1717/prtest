@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Standup Picker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #nameBlock {
+      width: 300px;
+      height: 150px;
+      line-height: 150px;
+      margin: 0 auto;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 15px;
+      color: white;
+      background-color: #ccc;
+      transition: background-color 0.4s ease;
+    }
+    #pickBtn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nameBlock"></div>
+  <button id="pickBtn">Pick Next Person</button>
+
+  <script>
+    const allNames = ["Alfej", "Shantanu", "Bipin", "Nilesh","Vikrant"];
+    const colors = ["#e74c3c", "#3498db", "#2ecc71", "#f39c12", "#9b59b6"];
+
+    let nameQueue = shuffle([...allNames]);
+    let roundComplete = false;
+
+    const nameBlock = document.getElementById('nameBlock');
+    const pickBtn = document.getElementById('pickBtn');
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    pickBtn.addEventListener('click', () => {
+      if (roundComplete) {
+        // Blank the block and prepare for a new round
+        nameBlock.textContent = "";
+        nameBlock.style.backgroundColor = "#ccc";
+        nameQueue = shuffle([...allNames]);
+        roundComplete = false;
+        return;
+      }
+
+      const name = nameQueue.pop();
+      nameBlock.textContent = name;
+      nameBlock.style.backgroundColor = getRandomColor();
+
+      if (nameQueue.length === 0) {
+        roundComplete = true;
+        // On next click, it will blank the block and reset
+      }
+    });
+  </script>
+
+</body>
+</html>
