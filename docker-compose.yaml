@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  db:
+    image: bitnami/mongodb:4.2.21
+    # Internal port: 27017
+    volumes:
+      - ${GAMMA_RE_DATA}/mongo_data:/bitnami/mongodb
+
+  indexer:
+    image: bitnami/elasticsearch:7.17.5
+    # Internal port: 9200
+    volumes:
+      - ${GAMMA_RE_DATA}/elastic_data:/bitnami/elasticsearch/data
+
+  gammare:
+    image: embold/gammare:0.9.3
+    environment:
+      - ES_DB_URL=mongodb://db:27017/
+      - ES_INDEXER_URL=http://indexer:9200
+    ports:
+      - "9090:9090" # Only port exposed to outside world
+    volumes:
+      - ${GAMMA_RE_DATA}:/opt/gammare_data
+      - ${GAMMA_RE_LOGS}:/opt/gammare_logs
