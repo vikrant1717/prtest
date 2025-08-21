@@ -1,0 +1,19 @@
+src\main\java\com\mariten\kanatools\KanaConverter.java,10,Critical,This is Critical code issue,Acustom rule12,Compiler Warnings;CWE;Required;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing;tool=a
+src\main\java\com\mariten\kanatools\KanaConverter.java,11,Critical,This is Critical code issue,Bcustom rule123,Compiler Warnings;CWE;tool=ab
+src\main\java\com\mariten\kanatools\KanaConverter.java,12,Critical,This is Critical code issue,Ccustom rule2323,Compiler Warnings;CWE;Required;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing;tool=am
+src\main\java\com\mariten\kanatools\KanaConverter.java,13,Critical,This is Critical code issue,Dcustom rule456,Compiler Warnings;CWE;Required;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing;tool=as
+src\main\java\com\mariten\kanatools\KanaConverter.java,14,Critical,This is Critical code issue,Ecustom rule4567,Compiler Warnings
+src\main\java\com\mariten\kanatools\KanaConverter.java,15,Critical,This is Critical code issue,Fcustom rule45678,Compiler Warnings;CWE;Required;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing
+src\main\java\com\mariten\kanatools\KanaConverter.java,16,Critical,This is Critical code issue is ,Gcustom rule newj,CWE;Required;required.test1;alfaiz.momin;CWE;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing
+src\main\java\com\mariten\kanatools\KanaConverter.java,17,Critical,This is Critical code issue is,Hgcustom rule newk,CWE;Required;required.test1
+src\main\java\com\mariten\kanatools\KanaConverter.java,18,Critical,This is Critical code issue is ,Icustom rule newl,CWE;Required;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing
+src\main\java\com\mariten\kanatools\KanaConverter.java,19,Critical,This is Critical code issue is,Jcustom rule newm,CWE;CWE1;CWE2;CWE3;required.bosch;CWE;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing
+src\main\java\com\mariten\kanatools\KanaConverter.java,20,Critical,This is Critical code issue is,Kcustom rule newn,CWE;tool=equired.bosch;CWE;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing
+src\main\java\com\mariten\kanatools\KanaConverter.java,21,Critical,This is Critical code issue is,Lcustom rule newos,required.bosch1;CWE;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing
+sample\SampleKanaConverter.java,7,Critical,"All classes, interfaces, enums and annotations must belong to a named package",NoPackage,required.bosch2;required.bosch4;CWE;required.test2;r;rt;l;tr;te;alfaiz;momin;embold;bstack;ss;why;you ;arr;champ;long;text;testing
+sample\SampleKanaConverter.java,8,Critical,"All classes, interfaces, enums and annotations must belong to a named package",NoPackage,required.bosch3;CWE;required.test2;r;rt;l;tr
+sample\SampleKanaConverter.java,9,Critical,"All classes, interfaces, enums and annotations must belong to a named package",NoPackage,required.bosch4;CWE;required.test2;r;rt;l;tr;te;alfaiz;momin
+sample\SampleKanaConverter.java,10,Critical,"All classes, interfaces, enums and annotations must belong to a named package",NoPackage,required.bosch5
+sample\SampleKanaConverter.java,11,Critical,"All classes, interfaces, enums and annotations must belong to a named package",NoPackage,required.bosch6
+sample/SampleKanaConverter.java,12,Critical,"All classes, interfaces, enums and annotations must belong to a named package",NoPackage,required.bosch6;CWE;required.test2
+,,,,,
