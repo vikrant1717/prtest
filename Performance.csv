@@ -1,0 +1,16 @@
+Repository_Language,Expected_Analysis_Time(S),Actual_Analysis_Time(S),Difference(S)
+Infrastructure,294.34,254.34,-40
+c#,43.64,49.64,6
+css,138.61,178.61,40
+html,48.04,28.04,-20
+C++,346.38,346.38,0
+Java,65.13,65.13,0
+Python,200.22,200.22,0
+JavaScript,314.41,314.41,0
+PHP,41.33,51.33,10
+Typescript,78.2,78.2,0
+Kotlin,132.24,132.24,0
+SQL,46763.43,4163.43,-42600
+Solidity,39.72,39.72,0
+Objective_C,23.18,23.18,0
+Go,44.6,44.6,0
