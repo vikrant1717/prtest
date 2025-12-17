@@ -5,6 +5,13 @@ public class Commit12 {
 			System.out.println("Screenshot taken for test : ");
 		} catch (Exception e) {
 			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			System.out.println("Exception " + e.getMessage());
+			
 		}
 	}
+
 }
