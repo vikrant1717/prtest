@@ -1,0 +1,118 @@
+ Install Syft and Grype on Windows (Without Package Manager)
+ Prerequisite
+
+ PowerShell or Command Prompt access
+ Internet connection
+
+---
+
+ Install Syft
+
+Step 1: Download Syft binary
+
+
+curl -LO https://github.com/anchore/syft/releases/latest/download/syft_windows_amd64.zip
+
+ Step 2: Extract the ZIP
+
+```powershell
+Expand-Archive syft_windows_amd64.zip -DestinationPath syft
+```
+
+---
+
+### Step 3: Move binary to a folder (optional but recommended)
+
+Example:
+
+```powershell
+mkdir C:\tools\syft
+move .\syft\syft.exe C:\tools\syft\
+```
+
+---
+
+### Step 4: Add to PATH
+
+* Go to **Environment Variables**
+* Edit **Path**
+* Add:
+
+```
+C:\tools\syft
+```
+
+---
+
+### Step 5: Verify
+
+```powershell
+syft version
+```
+
+---
+
+## Install Grype
+
+### Step 1: Download Grype binary
+
+```powershell
+curl -LO https://github.com/anchore/grype/releases/latest/download/grype_windows_amd64.zip
+```
+
+---
+
+### Step 2: Extract the ZIP
+
+```powershell
+Expand-Archive grype_windows_amd64.zip -DestinationPath grype
+```
+
+---
+
+### Step 3: Move binary
+
+```powershell
+mkdir C:\tools\grype
+move .\grype\grype.exe C:\tools\grype\
+```
+
+---
+
+### Step 4: Add to PATH
+
+Add below path in Environment Variables:
+
+```
+C:\tools\grype
+```
+
+---
+
+### Step 5: Verify
+
+```powershell
+grype version
+```
+
+---
+
+## Expected Outcome
+
+* Both tools installed successfully
+* Commands `syft` and `grype` should work from any terminal
+
+---
+
+## Notes
+
+* Restart terminal after updating PATH
+* If `curl` is not available, use browser to download ZIP manually
+* Ensure correct architecture (amd64 for 64-bit systems)
+
+---
+
+If you want, I can also give:
+
+* single script to automate this
+* or Jenkins/Azure DevOps integration steps 👍
