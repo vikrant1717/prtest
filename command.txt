@@ -1,3 +1,5 @@
 embold-scanner.bat analyse -u http://3.66.212.6:3000/ -c C:/Workspace/json/cs.json -t eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTc3MzY0ODEzODg1OCwiaWF0IjoxNzczNjQ4MTM4fQ.TBUZFXDN3Tr1nFZKc3cae3cw3e1s_e9kDaiXy_6u63xMHXWhcR4vTYzoztut8_-SqZnEL3ci46pLLjYqhzic3g -l /home/sourabh/workspace/log -s master -sh /home/sourabh/workspace/extract/ -b C:/Workspace/NetCoreCoverage -d /home/sourabh/workspace/data -r bfb5e8de399235b86fca1e13a7466660
 
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b .
+
+BB: ATATT3xFfGF0K_R-Agl_duEhiFRQW2H2iznf9nAwsvL0X6h_9NjLhS0NixOdZGgET8WvHcTKzL1ylz4BvgAhEM22euHxuYsrdmZ3KZ_HXBQlzNFQXiiq3MaI6QG7_dunRPsBz2ZsModTSUfSFRPu4y_gYEVLZb0ENKSnCWV1hEsijA5Z9rHmBFI=16F88B29
