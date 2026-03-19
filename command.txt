@@ -3,3 +3,5 @@ embold-scanner.bat analyse -u http://3.66.212.6:3000/ -c C:/Workspace/json/cs.js
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b .
 
 BB: ATATT3xFfGF0K_R-Agl_duEhiFRQW2H2iznf9nAwsvL0X6h_9NjLhS0NixOdZGgET8WvHcTKzL1ylz4BvgAhEM22euHxuYsrdmZ3KZ_HXBQlzNFQXiiq3MaI6QG7_dunRPsBz2ZsModTSUfSFRPu4y_gYEVLZb0ENKSnCWV1hEsijA5Z9rHmBFI=16F88B29
+
+BB with scope: ATATT3xFfGF0zcNGlWP568Aue_5pdIcyedKmlY1oZXDga6ebg4_i7dTn8SEr-Rua6G8WohNgSPe7DdWarLtWVnJ-yA_e0Xv1S7MRBEVu0GH0q1ZprCOhn_3bZYKrVYL4XxqfA5vkAPkbaX0oMhsfG1j44qhSh-M2kvL1WZHy4-0XjOPcdLvaPX8=62451FB7
