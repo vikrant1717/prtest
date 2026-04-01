@@ -1,0 +1,86 @@
+public - can be accessed throughout the project
+
+private- can be accessed in class only
+
+default/package: can be accessed within the package
+
+protected: can be access in same package or if outside package class should be child class
+
+
+
+
+final keyword:
+
+final ; variables becomes constant
+
+final method can not be overridden
+
+final class can not be inherited
+
+static::
+
+static method can be called without creating object , just with class name
+
+static method can not use non static members
+
+can share data between objects
+
+static block is called when object of class is created , before constructor
+
+
+IN INTERFACE : 
+
+WE CAN CREATE TWO TYPES OF METHODS (apart from abstract)
+
+1 static method: 
+can be called using interface name
+
+2 default methods:
+
+can be called using child class object 
+
+1-4/26
+
+WE CAN NOT  create object of abstract class
+
+when abstract class is parent class we need to implement all abstract methods in child class to create an object of it 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
