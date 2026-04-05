@@ -44,6 +44,25 @@ can be called using child class object
 WE CAN NOT  create object of abstract class
 
 when abstract class is parent class we need to implement all abstract methods in child class to create an object of it 
+interface only has constants and only abstract methods
+
+Multiple inheritance is not possible with class only in java so we can use interface
+
+A class
+B interface
+C class extends A implements B
+
+TESTNG "
+
+BeforeSuite
+BeforeTest
+BeforeClass
+BeforeMethod
+Test
+AfterMethod
+AfterClass
+AfterTest
+AfterSuite
 
 
 
