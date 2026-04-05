@@ -68,7 +68,32 @@ AfterSuite
 
 
 
+Most candidates can explain OOP concepts perfectly in theory.
 
+But in interviews, when the question comes — “Where have you used OOP in your project?” — many struggle to connect theory with real-world work.
+
+Let’s bridge that gap 👇
+
+Encapsulation
+Theory: Wrapping data and methods into a single unit.
+In Practice: In my automation framework, I implement the Page Object Model (POM) where locators and actions are encapsulated inside page classes. Test classes never interact with elements directly — they only call page methods.
+
+Abstraction
+Theory: Hiding implementation details and exposing only the functionality.
+In Practice: I created reusable utility methods such as "click()", "sendKeys()", and "wait" helpers. Test cases simply use these methods without worrying about the internal implementation.
+
+Inheritance
+Theory: One class acquiring the properties of another.
+In Practice: Base classes like "BaseTest" or "DriverFactory" are extended by test classes to reuse driver setup, teardown, and other common functionalities.
+
+Polymorphism
+Theory: The same method behaving differently in different situations.
+In Practice: Method overloading in utility classes (e.g., "click(locator)" vs "click(element)") and dynamic handling for different platforms like Android and iOS.
+
+The key insight:
+Interviews aren’t about definitions — they’re about application.
+
+When you connect concepts to real project implementations, your answers instantly become stronger and more convincing.
 
 
 
