@@ -1,0 +1,172 @@
+# 🧪 Selenium Automation Assignment – Requirement Document
+
+## 📌 Project Title
+
+E-Commerce Website Automation Framework
+
+---
+
+## 🎯 Objective
+
+To design and develop a **test automation framework** using:
+
+* Java
+* Selenium WebDriver
+* TestNG
+* ThreadLocal (for parallel execution)
+
+The framework should be scalable, maintainable, and support parallel test execution.
+
+---
+
+## 🌐 Application Under Test (AUT)
+
+URL: https://www.saucedemo.com/
+
+---
+
+## 📂 Scope of Automation
+
+### ✅ 1. Login Functionality
+
+Automate the following scenarios:
+
+* Valid login with correct credentials
+* Invalid login with incorrect credentials
+* Login with empty username and/or password
+
+---
+
+### ✅ 2. Product Page
+
+* Verify product list is displayed
+* Add product to cart
+* Remove product from cart
+
+---
+
+### ✅ 3. Cart Page
+
+* Verify selected product is present in cart
+* Validate product price
+
+---
+
+### ✅ 4. Checkout Process
+
+* Enter user details (First Name, Last Name, Zip Code)
+* Complete checkout
+* Verify order success message
+
+---
+
+## 🏗️ Framework Design Requirements
+
+### 🔹 1. Page Object Model (POM)
+
+Create separate page classes for:
+
+* LoginPage
+* ProductsPage
+* CartPage
+* CheckoutPage
+
+Each page should contain:
+
+* Web elements
+* Page actions (methods)
+
+---
+
+### 🔹 2. Driver Management (ThreadLocal)
+
+* Implement ThreadLocal for WebDriver
+* Ensure each test runs in isolated browser instance
+* Support parallel execution
+
+---
+
+### 🔹 3. Base Test Class
+
+Create a base class to handle:
+
+* Browser initialization
+* Setup and teardown methods
+* Driver configuration
+
+---
+
+### 🔹 4. Configuration Management
+
+Use a config file (e.g., config.properties) to store:
+
+* Application URL
+* Browser type
+
+---
+
+### 🔹 5. TestNG Integration
+
+* Use TestNG annotations (@Test, @BeforeMethod, @AfterMethod)
+* Implement DataProvider for login tests
+* Add assertions for validation
+
+---
+
+## 📁 Project Structure
+
+project
+├── base
+├── pages
+├── tests
+├── utils
+├── config
+└── reports
+
+---
+
+## ⚙️ Additional Features (Optional but Recommended)
+
+* Capture screenshot on test failure
+* Implement retry mechanism for failed tests
+* Add logging (Log4j)
+* Generate test reports (Extent Reports)
+* Support cross-browser execution
+
+---
+
+## 🚀 Execution Requirements
+
+* Tests should run successfully without failures
+* Parallel execution should be supported
+* Framework should be reusable and maintainable
+
+---
+
+## 📊 Expected Deliverables
+
+* Fully functional automation framework
+* Source code with proper structure
+* TestNG XML for execution
+* Report (if implemented)
+
+---
+
+## 🔥 Evaluation Criteria
+
+* Code quality and structure
+* Proper use of POM and ThreadLocal
+* Parallel execution implementation
+* Reusability and scalability
+* Understanding of framework design
+
+---
+
+## 📌 Notes
+
+* Follow clean coding practices
+* Use proper naming conventions
+* Add comments where necessary
+* Ensure code readability
+
+---
