@@ -1,0 +1,121 @@
+🧠 1. Core Java (15 Questions)
+Difference between HashMap vs ConcurrentHashMap
+How does HashMap internally work?
+What is equals() and hashCode() contract?
+Difference between ArrayList vs LinkedList
+What is immutable class? Example
+String vs StringBuilder vs StringBuffer
+What is multithreading? How to create thread?
+Difference between synchronized vs Lock
+What is ThreadLocal? Where used? (important for Selenium)
+Java 8 Streams vs Collections
+Functional interfaces & Lambda
+Exception handling best practices
+Difference between final, finally, finalize
+OOP concepts with real automation example
+Write program: first non-repeating character
+🌐 2. Selenium WebDriver (20 Questions)
+Architecture of Selenium WebDriver
+Role of W3C WebDriver protocol
+Difference between WebDriver vs Selenium Grid
+Implicit vs Explicit vs Fluent wait
+Why mixing waits is bad?
+How to handle StaleElementReferenceException
+Handling ElementClickInterceptedException
+How to handle dynamic elements?
+How do you design stable locators?
+PageFactory vs normal POM
+Handling frames, alerts, windows
+File upload/download automation
+How to capture screenshots?
+How to handle AJAX calls?
+Headless browser execution
+Cross-browser testing strategy
+How Selenium communicates with browser internally
+Difference between CSS vs XPath
+How to run tests in parallel
+Debugging failing Selenium test
+🧱 3. Framework Design (15 Questions)
+Design scalable POM framework
+What layers do you include?
+BaseTest vs BasePage difference
+DriverFactory design
+ThreadLocal WebDriver implementation
+Where do you implement waits?
+How to avoid code duplication
+How to design reusable components
+Logging strategy
+Reporting tools (Extent / Allure)
+Screenshot capture strategy
+Handling test configuration (env-based)
+How to maintain 1000+ test cases
+How to reduce maintenance effort
+Framework folder structure explanation
+🧪 4. TestNG + BDD (10 Questions)
+
+Using TestNG and Cucumber
+
+TestNG annotations lifecycle
+Parallel execution in TestNG
+Dependency between tests
+Retry mechanism implementation
+DataProvider usage
+Cucumber feature file structure
+Step definition design
+Scenario Outline vs DataTable
+Tag-based execution
+Handling duplicate steps
+🔗 5. API Testing (10 Questions)
+
+Using Rest Assured
+
+How to validate response
+JSON schema validation
+Handling authentication (JWT/OAuth)
+API chaining
+Handling dynamic data
+Contract testing basics
+Response time validation
+Negative testing scenarios
+API + UI integration
+How to mock APIs
+🐳 6. Docker + Selenium Grid (10 Questions)
+
+Using Docker
+
+What is Docker?
+Docker Image vs Container
+What is Dockerfile?
+How to run Selenium in Docker
+Selenium Grid architecture
+Hub vs Node
+Parallel execution using Docker
+Docker Compose vs docker run
+Scaling containers
+Benefits of Docker in CI/CD
+☁️ 7. AWS Basics (5 Questions)
+
+Using Amazon Web Services
+
+How to run tests on cloud
+EC2 usage in automation
+S3 usage (reports/logs)
+CI/CD integration with AWS
+Basics of cloud scaling
+🤖 8. AI Testing / RAG (10 Questions) ⭐ (High Value)
+What is RAG architecture?
+What are embeddings?
+What is vector database?
+How to test hallucination
+Context precision vs recall
+How to evaluate LLM output
+Tools: RAGAS / DeepEval
+Prompt engineering basics
+How to design AI testing framework
+How to reduce hallucination
+🔥 9. Real-World / Scenario Questions (5 Questions)
+Your tests are flaky—what will you do?
+Test suite takes 4 hours—optimize it
+Design framework for large-scale project
+UI + API + AI testing in one framework?
+How do you handle production bugs found by automation?
