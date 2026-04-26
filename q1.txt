@@ -1,0 +1,118 @@
+🎯 Round 1: System Thinking + Ownership
+❓ Q1
+
+You join a team where:
+
+Automation suite = 1500 tests
+Execution time = 5 hours
+Flaky rate = 25%
+
+👉 What is your 30-60-90 day plan?
+
+❓ Q2
+
+How do you decide:
+
+What to automate
+What NOT to automate
+
+👉 Give real examples
+
+🧱 Round 2: Framework Architecture (Deep)
+❓ Q3
+
+Design a scalable automation framework that supports:
+
+UI (Selenium)
+API (Rest Assured)
+AI testing (RAG)
+
+👉 I want:
+
+Folder structure
+Flow
+How components interact
+❓ Q4 (Important)
+
+Your framework is growing messy:
+
+Duplicate locators
+Hardcoded waits
+Tight coupling
+
+👉 How do you refactor without breaking everything?
+
+⚙️ Round 3: Debugging + Problem Solving
+❓ Q5
+
+Test passes locally but fails in CI.
+
+👉 Walk me through your step-by-step debugging approach
+
+(I will stop you if vague)
+
+❓ Q6
+
+A test fails only:
+
+On Chrome
+Only in headless mode
+
+👉 What could be reasons?
+
+🐳 Round 4: Docker + Scaling
+❓ Q7
+
+You need to run:
+
+300 tests
+Across Chrome + Firefox
+Under 20 minutes
+
+👉 Design your execution strategy using Docker
+
+❓ Q8
+
+How do you ensure:
+
+Containers don’t become bottleneck
+Grid doesn’t fail under load
+☁️ Round 5: Cloud + Cost
+❓ Q9
+
+Your cloud bill is too high.
+
+👉 What exact steps will you take to reduce cost?
+
+(I expect specifics, not generic answers)
+
+🤖 Round 6: AI / RAG (Your Differentiator)
+❓ Q10
+
+Your RAG system:
+
+Sometimes gives correct answers
+Sometimes hallucinates
+
+👉 How do you debug whether issue is:
+
+Retriever
+LLM
+❓ Q11 (Advanced)
+
+Design test strategy for LLM system where output is non-deterministic
+
+🔥 Final Round: Leadership + Ownership
+❓ Q12
+
+Developer says:
+
+“This is not a bug, your test is wrong”
+
+👉 What do you do?
+
+❓ Q13
+
+Your team is missing deadlines because automation is slow.
+
+👉 What changes will you introduce?
