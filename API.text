@@ -1,0 +1,29 @@
+1. Can you explain the automation framework you worked on in your recent project?
+2. Was the framework already available, or were you involved in designing it from scratch?
+3. What type of framework did you use - Data Driven, Hybrid, BDD, or POM?
+4. What tools and technologies were part of your automation stack?
+5. Why did your team choose that framework structure?
+6. What are the main components of an API request?
+7. Which HTTP methods have you worked with?
+8. What authentication methods have you used in API testing?
+9. How do you validate API responses?
+10. How do you compare API response data with database data?
+11. How do you handle 50+ APIs efficiently in Postman?
+12. How do you manage different environments like QA, UAT, and Production in Postman?
+13. How do you avoid hardcoding values in API requests?
+14. Can you explain API chaining with an example?
+15. How would you perform a sequence like GET -> POST -> PUT in automation?
+16. Where do you store environment-specific values in your framework?
+17. How do you pass dynamic parameters during runtime?
+18. If a change happens only in the Account Details module, how do you decide what to test?
+19. How do you run only smoke or regression tests?
+20. Do you configure execution at class level or XML level?
+21. How do you separate UI and API tests in the same framework?
+22. Write a program to reverse a string without using built-in functions. Handle irregular spaces while reversing a string.
+  Example input: "B a n g a l o r e"
+23. Can you explain your logic before writing the code?
+24. A test passes locally but fails in Jenkins. How would you debug it?
+25. Your automation script fails because the UI changed. What would you do?
+26. The login page takes longer than expected to load. How would you handle it?
+27. One test case passes individually but fails in suite execution. Why?
+28. How do you handle unstable test environments?
