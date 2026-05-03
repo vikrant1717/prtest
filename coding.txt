@@ -1,0 +1,37 @@
+1.Write Java Code to Print all the Permutations of a given string.
+2. Find the Kth largest and Kth smallest element in array.
+3.Sort array of 0,1,2 in O(n) time.
+4.Palindromic substrings
+5.How would you write a Java program to find duplicate strings in a given input?
+ 6.Program to remove duplicate elements from an array list.
+ 7.Given a string, remove all the duplicate elements from a string
+ 8.Write a Java Program to calculate frequency of each character of string without using HashMap.
+ 9.Given a string containing multiple words, find the third largest word based on character count
+ 10.Given a string with repeated words, reverse only the repeated words
+ 11.Write a code for printing same characters in a string
+ 12.Write a program to access elements of a String array.
+ 13.Write a Java program to find and print broken links and non-broken links.
+ 14.Write Java code: str = "Automation Test Engineer" Remove spaces
+ 15.Print each character with its index
+ 16.Write a program to find duplicate characters in a string.
+ 17.Reverse a string without using inbuilt functions.
+ 18. Count repeated words in a sentence.
+ 19. Write a program to find prime numbers between 1–50.
+ 20.Write a Java program to check whether a given string is a palindrome
+ 21. Write a Java program to count the frequency of words in: "java is best java is powerful"
+ 22. In an array print the second smallest and second largest element
+ 23.Given an array {1,3,3,4,5,6,6,7,8,9,9} when user enters a search element, the program should display the index number where the element is found. If the element is repeated it should display all those indices. If it is not present in the given array program should display "element not found"
+ 24.Write a program to find the sum of even numbers in an integer array.
+ 25.Write Java code to print array elements appearing 2 or more times
+ 26.Write a program to read a sentence and print each word along with how many characters it contains.
+ 27.Array search program (display all indices or element not found)
+ 28. Write a program to remove duplicates from an array.
+ 29.Count the frequency of characters in a string.
+ 30.Write a program to find the Fibonacci series up to n.
+ 31.Find the maximum and minimum element in an array.
+ 32.Write a program to rotate an array by k positions.
+ 33.Write a program to find the second largest number in an array.
+ 34.Write a program to check if two strings are anagrams of each other.
+ 35.Write logic to reverse a string taken from the console.
+ 36.Write logic to check whether given input is alphanumeric.
+ 37.Write a Java program to reverse first and last digit of number without converting it into a string.
