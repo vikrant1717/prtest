@@ -1,0 +1,40 @@
+💻 Coding + Automation (Core Focus)
+You’ll write code in a shared editor (usually Python, Java, or JavaScript).
+
+Expect:
+
+Writing automation-style logic (not just pure algorithms)
+
+Parsing data (JSON, logs, UI elements)
+
+Writing test-like functions
+
+👉 Example tasks:
+
+Validate API responses
+
+Write a function to detect duplicate test cases
+
+Simulate UI test logic (like checking button states)
+
+2. 🧪 QA / Automation Concepts
+They’ll assess how you think as a QA engineer.
+
+Common topics:
+
+Test case design
+
+Edge cases
+
+Automation frameworks
+
+CI/CD integration
+
+Debugging failures
+
+
+0
+False_Secret1108
+•
+2mo ago
+Interesting
