@@ -32,9 +32,6 @@ CI/CD integration
 
 Debugging failures
 
-
-0
-False_Secret1108
-•
+1. What is POM and advantages of it 2. How will you improve readability and main ability of test suite 3. How will you handle dynamic web elements in automation 4. Different types of locators and how it internally works 5. How will you handle element which is dynamic kind of question .. answer all in details
 2mo ago
 Interesting
