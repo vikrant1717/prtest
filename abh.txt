@@ -1,0 +1,23 @@
+I use these 21 questions when interviewing SDETs at the 3–8 year experience range:
+ 
+1/ Brief overview of tools and technologies you've worked with?
+2/ Describe Smoke, Sanity, and Regression testing. Why do we need all 3?
+3/ Find the first and last occurrence of 'a' in "amazonaanazzz" with index number
+4/ How do you specify environment variables in Maven?
+5/ How do you override a property in Maven at build time?
+6/ How do you execute TestNG test cases in a custom order?
+7/ What is the difference between @Factory and @DataProvider?
+8/ Write the code snippet for passing values to val1 and val2 via TestNG XML
+9/ How do you handle browser notifications in Selenium?
+10/ Explain the different XPath axes with examples
+11/ Give an example of method overloading you've used in Selenium
+12/ Give a scenario where an interface is used in your framework ← most candidates stumble here
+13/ Can we have static methods in an interface? (Java 8+ answer expected)
+14/ Can we change the value of an interface variable in an implementing class?
+15/ How do you search for text in your current working directory?
+16/ How do you save local changes without committing or pushing to remote?
+17/ By default, which JOIN is implemented in SQL?
+18/ What happens when a CI/CD job stops in between?
+19/ How do you manage a CI/CD pipeline when high-priority scenarios fail mid-run?
+20/ What is the difference between HTTPS, SSL, and TLS?
+21/ How would you handle authentication in Cucumber scenarios for web apps?
