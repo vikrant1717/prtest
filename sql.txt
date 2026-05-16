@@ -1,0 +1,394 @@
+-- CREATE DATABASE temp;
+
+--  CREATE TABLE student(
+  
+--     roll_no INT PRIMARY KEY,
+--     name VARCHAR(50),
+--     marks INT NOT NULL,
+--     grade VARCHAR(3),
+--     city VARCHAR(20)  
+-- );
+
+  -- INSERT INTO student values(103,'pooja',77,'C','Mumbai');
+
+  --INSERT INTO student values(102,'Neha',78,'C','Delhi');
+
+
+
+
+--select name,marks from student;
+
+--select DISTINCT CITY FROM student;
+
+-- SELECT * FROM student WHERE city ='Pune' and marks > 60;
+
+-- SELECT * from student where marks BETWEEN 1 AND 100
+
+--SELECT * FROM student WHERE city NOT IN ('Pune','Mumbai') LIMIT 1
+
+-- select * from student where marks>80 ORDER by marks asc
+
+
+--select COUNT(grade) from student
+
+-- select city, AVG(marks) from student group by city
+
+-- select mode, COUNT(customers) from paymets group by mode ORDER by desc
+
+--select city, AVG(marks) from student group by city having max(marks)>85 ORDER BY AVG(marks) desc LIMIT 2 
+
+-- select city, AVG(marks) from student group by city having max(marks)>85 ORDER BY avg(marks) desc LIMIT 2
+
+--select * from student;
+
+--SELECT roll_no from student where roll_no % 2=0 
+
+-- SELECT name,roll_no,grade,city from student where roll_no IN (SELECT roll_no from student where roll_no % 2=0 )
+
+
+-- d=find the  narks from student of Mumbai
+
+
+ --SELECT MAX(marks) FROM (SELECT * from student where city='Mumbai') as temp
+--CREATE VIEW view1 as select name from student
+
+
+-- select * from view1
+
+--DROP VIEW view1
+
+--DROP TABLE student
+---------------------------------------------------------------------------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX----------------------------------------------
+
+-- CREATE TABLE student(
+--   id INT,
+--   name VARCHAR(29),
+--   marks INT 
+  
+-- );
+
+  -- INSERT INTO student values (106,'Naina',75)
+
+
+--select * from student where marks >= 80
+
+-- ALTER TABLE student add COLUMN city VARCHAR(20)
+
+-- SELECT * from student
+
+ --UPDATE student SET marks='79' where roll_no=106
+
+-- ALTER TABLE student
+-- RENAME COLUMN nmae TO name;
+
+-- SELECT DISTINCT city,name from student
+
+-- SELECT name from student where city='Pune'
+
+-- SELECT name,COUNT(*) FROM student group by name
+
+-- SELECT name,MAX(marks) from student group by name
+
+--SELECT city,AVG(marks) from student group by city
+
+-- SELECT city,AVG(marks)from student group by city having AVG(marks)>60 LIMIT 1
+
+-- select marks from student WHERE marks IN (SELECT marks from student ORDER By marks asc LIMIT 2) 
+
+
+-- SELECT name,marks from student WHERE marks= (SELECT MAX(marks) from student WHERE marks < (SELECT MAX(marks) from student))
+
+ --select COUNT(name),city from student group by name having COUNT(name)>1
+
+ --select * from student
+
+-- SELECT name,marks from student WHERE marks > (select avg(marks) from student)
+
+
+-- SELECT name,marks FROM student WHERE marks = (SELECT MAX(marks) FROM student WHERE marks < (SELECT MAX(marks) from student))  
+
+-- SELECT name,marks from student ORDER BY marks desc LIMIT 1 OFFSET 2
+
+-- SELECT names FROM student 
+-- INNER JOIN courses 
+-- SELECT course_name from courses
+-- student.student_id= courses.course_id
+
+-- SELECT name,course_name 
+-- FROM student  
+-- INNER JOIN course  
+-- ON student.course_id = course.course_id;
+
+
+-- SELECT name FROM student
+-- LEFT JOIN course
+-- ON student.id= course.id
+-- WHERE course.id is NOT NULL
+
+-- SELECT name,marks from student ORDER BY marks desc LIMIT 3
+
+-- SELECT city,MAX(marks) FROM student GROUP BY city 
+
+-- SELECT SUM(marks) from student
+
+--SELECT * from student
+
+ --SELECT marks,COUNT(*) from student GROUP BY marks having COUNT(*)>1;
+ 
+--  SELECT roll_no from student WHERE roll_no % 2=0
+ 
+ 
+--  SELECT name from student where name like 'N%'
+
+-- SELECT * from student where grade IS NULL or city IS NULL
+
+-- SELECT * from student
+
+--SELECT name,marks from student ORDER BY marks desc
+
+-- transactions (customer_id, transaction_date, amount, segment) 
+-- Write a SQL query to calculate the total transaction amount per customer segment.
+
+--SELECT segment,SUM(amount) from transactions GROUP by segment
+
+
+
+-- customers (customer_id, segment)
+-- defaults (customer_id, default_date)
+
+-- Prompt:
+
+-- Write a SQL query to calculate the number of defaults per segment.
+
+
+-- SELECT segment,COUNT(defaults.customer_id)
+-- FROM customers
+-- LEFT JOIN defaults
+-- ON customers.customer_id = defaults.customer_id
+-- GROUP BY segment
+
+
+-- SELECT segment,COUNT(defaults.customer_id) from customers
+-- LEFT JOIN defaults
+-- ON customers.customer_id = defaults.customer_id
+-- GROUP by segment
+
+
+-- CREATE TABLE EMPLOYEE(
+  
+--   name VARCHAR(50),
+--   city VARCHAR(20),
+--   marks INT
+--   );
+
+-- INSERT INTO EMPLOYEE values('SNEHA','MUMBAI',70)
+
+-- SELECT * FROM EMPLOYEE
+
+-- SELECT city,AVG(marks) FROM EMPLOYEE GROUP BY city having AVG(marks)>83
+
+
+-- CREATE TABLE loan_data (
+--     customer_id INT,
+--     customer_name VARCHAR(50),
+--     segment VARCHAR(20),
+--     city VARCHAR(20),
+--     loan_amount INT,
+--     default_flag INT,
+--     loan_month VARCHAR(20)
+-- );
+
+-- INSERT INTO loan_data VALUES
+-- (101, 'Rahul', 'Gold', 'Pune', 500000, 0, 'Jan'),
+-- (102, 'Neha', 'Silver', 'Mumbai', 300000, 1, 'Jan'),
+-- (103, 'Amit', 'Gold', 'Delhi', 700000, 0, 'Feb'),
+-- (104, 'Sneha', 'Platinum', 'Mumbai', 900000, 1, 'Feb'),
+-- (105, 'Kiran', 'Silver', 'Pune', 200000, 0, 'Mar'),
+-- (106, 'Pooja', 'Gold', 'Mumbai', 400000, 1, 'Mar'),
+-- (107, 'Vikas', 'Silver', 'Delhi', 350000, 0, 'Apr'),
+-- (108, 'Anil', 'Gold', 'Pune', 800000, 1, 'Apr'),
+-- (109, 'Riya', 'Platinum', 'Mumbai', 950000, 0, 'May'),
+-- (110, 'Sahil', 'Gold', 'Delhi', 600000, 1, 'May');
+
+
+-- SELECT * from loan_data
+
+-- Show customer names and loan amount
+
+-- SELECT customer_name,loan_amount from loan_data
+
+-- Find customers from Mumbai
+
+--  SELECT * from loan_data where city='Mumbai'
+
+-- Find customers with loan amount > 500000
+
+-- SELECT * from loan_data WHERE loan_amount>500000
+
+-- Find distinct segments
+
+-- SELECT DISTINCT segment from loan_data
+
+-- Count total customers
+
+-- SELECT COUNT(*) from loan_data
+
+-- Find maximum loan amount
+
+-- SELECT MAX(loan_amount) FROM loan_data 
+
+-- Find average loan amount per segment
+
+-- SELECT segment,AVG(loan_amount) FROM loan_data GROUP BY segment
+
+-- Find total defaults per segment
+
+-- SELECT segment,COUNT(default_flag) FROM loan_data WHERE default_flag = 1 GROUP BY segment
+
+-- Find segments where avg loan > 500000
+
+--  SELECT segment,AVG(loan_amount) FROM loan_data GROUP BY segment having AVG(loan_amount)>500000
+
+-- Find second highest loan amount
+
+-- SELECT loan_amount FROM loan_data WHERE loan_amount = (SELECT MAX(loan_amount) from loan_data WHERE loan_amount < (SELECT MAX(loan_amount) from loan_data ))
+  --  SELECT MAX(loan_amount) FROM loan_data WHERE loan_amount < (SELECT MAX(loan_amount) FROM loan_data)
+   
+  -- SELECT MAX(loan_amount)FROM loan_data WHERE loan_amount < (SELECT MAX(loan_amount)FROM loan_data); 
+  
+  
+  -- Find duplicate cities
+  -- -- 
+  -- SELECT city,COUNT(*) FROM loan_data GROUP By city having COUNT(*)>1
+  
+  -- Find customers above average loan amount
+  
+  -- SELECT customer_name FROM loan_data WHERE loan_amount > (SELECT AVG(loan_amount) FROM loan_data) 
+  
+  -- Find top 3 highest loan amounts
+  
+  -- SELECT loan_amount FROM loan_data ORDER BY loan_amount desc LIMIT 3
+  
+  -- Find customers whose names start with 'R'
+  
+  -- SELECT customer_name FROM loan_data WHERE customer_name LIKE 'R%'
+  
+  -- Find highest loan per city
+  
+    --  SELECT city,MAX(loan_amount) FROM loan_data GROUP BY city
+    
+    
+      -- SELECT * from loan_data
+    
+    -- Find default rate per segment
+    
+    
+    -- Find city with highest average loan
+    
+    
+  -- SELECT city,AVG(loan_amount) FROM loan_data GROUP BY city ORDER BY AVG(loan_amount) desc LIMIT 1
+ 
+--  SELECT customer_name, loan_amount from loan_data ORDER BY loan_amount desc LIMIT 3
+  
+--  SELECT loan_amount FROM loan_data WHERE loan_amount = (SELECT MAX(loan_amount) from loan_data WHERE loan_amount < (SELECT MAX(loan_amount) from loan_data ))
+--  SELECT MAX(loan_amount) FROM loan_data WHERE loan_amount < (SELECT MAX(loan_amount)FROM loan_data WHERE loan_amount < (SELECT MAX(loan_amount) FROM loan_data));
+
+
+
+-- transactions (customer_id, transaction_date, amount, segment)
+
+-- Prompt:
+
+-- Write a SQL query to calculate the total transaction amount per customer segment.
+    
+    
+    
+    -- SELECT segment,SUM(amount) from transactions GROUP BY segment
+    
+--     Then I was given two tables:
+
+-- customers (customer_id, segment)
+-- defaults (customer_id, default_date)
+
+-- Prompt:
+
+-- Write a SQL query to calculate the number of defaults per segment.
+
+-- This required a JOIN and aggregation.
+      
+-- SELECT segment,COUNT(defaults.customer_id)
+-- FROM customers
+-- LEFT JOIN defaults
+-- ON customers.customer_id = defaults.customer_id
+-- GROUP BY segment
+
+
+
+-- CREATE TABLE employees (
+
+--     emp_id INT PRIMARY KEY,
+--     emp_name VARCHAR(50),
+--     department VARCHAR(30),
+--     salary INT,
+--     manager_id INT,
+--     city VARCHAR(30)
+-- );
+
+
+-- INSERT INTO employees VALUES
+-- (101, 'Rahul', 'IT', 80000, 201, 'Pune'),
+-- (102, 'Neha', 'HR', 60000, 202, 'Mumbai'),
+-- (103, 'Amit', 'IT', 95000, 201, 'Pune'),
+-- (104, 'Sneha', 'Finance', 75000, 203, 'Delhi'),
+-- (105, 'Rohit', 'IT', 80000, 201, 'Mumbai'),
+-- (106, 'Priya', 'HR', 65000, 202, 'Pune'),
+-- (107, 'Kunal', 'Finance', 90000, 203, 'Delhi'),
+-- (108, 'Anjali', 'IT', 120000, 201, 'Bangalore'),
+-- (109, 'Vikas', 'HR', 60000, 202, 'Mumbai'),
+-- (110, 'Pooja', 'Finance', 75000, 203, 'Pune');
+
+-- SELECT * from employees
+
+
+-- Find the second highest salary from employees table.
+
+
+
+-- SELECT MAX(salary) FROM employees WHERE salary = (SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees ) )
+
+
+-- Find salaries which are repeated more than once.
+
+
+-- SELECT salary,COUNT(*) FROM employees GROUP BY salary having COUNT(*) > 1 
+
+
+-- Find highest salary in each department.
+
+
+-- SELECT department,MAX(salary) from employees GROUP BY department ORDER BY MAX(salary) desc
+
+
+-- Find employees whose salary is greater than average salary of their department.
+
+
+
+
+ 
+-- SELECT emp_name,department,salary FROM employees WHERE salary > (SELECT AVG(salary) from employees WHERE department = e.department )
+
+
+
+-- SELECT * FROM employees where salary IN (SELECT salary from employees GROUP BY salary having Count(*)>1)
+
+-- SELECT *
+-- FROM employees
+-- WHERE salary IN (
+
+--     SELECT salary
+--     FROM employees
+--     GROUP BY salary
+--     HAVING COUNT(*) > 1
+-- );
+
+ SELECT MAX(salary) from employees WHERE salary = (SELECT MAX(salary) from employees where salary < (SELECT MAX(salary) from employees))
