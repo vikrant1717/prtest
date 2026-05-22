@@ -1,0 +1,82 @@
+{
+	"gammaAccess": {
+		"url": "",
+		"token": ""
+	},
+	"repositories": [
+		{
+			"dataDir": "",
+			"repository": {
+				"uid": "",
+				"projectName": "coverage-dummy",
+				"languages": [
+					"JAVASCRIPT"
+				],
+				"sources": {
+					"baseDir": "",
+					"exclusions": []
+				}
+			},
+			"settings": {
+				"additionalOptions": [],
+				"includePaths": []
+			},
+			"modules": {
+				"coverage": [
+					{
+						"name": "istanbul",
+						"enabled": true,
+						"config": {
+							"rules": [],
+							"options": [
+								{
+									"name": "xmlReportPath",
+									"type": "upload",
+									"value": "/Users/nilesh/nilesh/source_codes/zip/python/coveragepy_project",
+									"required": false
+								}
+							]
+						}
+					}
+				],
+				"unittest": [
+					{
+						"name": "junit",
+						"enabled": false,
+						"config": {
+							"rules": [],
+							"options": [
+								{
+									"name": "reportDir",
+									"type": "upload",
+									"value": "",
+									"required": true
+								}
+							]
+						}
+					}
+				],
+				"relevance": [
+					{
+						"name": "relevance",
+						"enabled": true,
+						"config": {
+							"rules": [],
+							"options": []
+						}
+					}
+				],
+				"codeissues": [
+					{
+						"name": "pmd",
+						"enabled": false
+					},
+					{
+						"name": "gamma_java",
+						"enabled": false
+					}
+				]
+			}
+		}
+	]
+}

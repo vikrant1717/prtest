@@ -1,0 +1,920 @@
+Total RAM is 15 GB
+ANALYSER_XMX is (-Xmx6072m)
+ANALYSER_XMX is (5)GB
+Total free memory is 16 GB
+System health check passed.
+ROOT_CERTS_PATH is set as /opt/gamma/certs
+Successfully combined all PEM files into /opt/gamma_data/combined-certs.pem
+Git CA configuration updated to use /opt/gamma_data/combined-certs.pem
+Using below database configuration
+-------------------------------------
+Connection: postgres 18.156.1.119 5432
+Database: gamma corona
+-------------------------------------
+Database already exists
+Creating analytics and gamma baseline and running migration
+gamma checksum updating gamma
+UPDATE 1
+UPDATE 1
+Updated checksums in flyway_schema_history table for gamma
+ALTER TABLE
+NOTICE:  relation "schema_version" does not exist, skipping
+Migrating gamma DB on schema : public
+A more recent version of Flyway is available. Find out more about Flyway 11.3.4 at https://rd.gt/3rXiSlV
+
+Flyway OSS Edition 10.17.3 by Redgate
+
+See release notes here: https://rd.gt/416ObMi
+Database: jdbc:postgresql://18.156.1.119:5432/gamma (PostgreSQL 16.3)
+Successfully validated 42 migrations (execution time 00:00.145s)
+Current version of schema "public": 40
+Migrating schema "public" with repeatable migration "current release"
+WARNING: DB: column "link_repo_uid" of relation "subsystems" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "backup_config" of relation "settings" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: relation "contributors" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: relation "subsystem_contributors" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: column "tenant_id" of relation "contributors" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "last_scan_date" of relation "contributors" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "last_scan_repo" of relation "contributors" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "activities" of relation "users" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "author_username" of relation "contributors" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "other_settings" of relation "settings" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: relation "subsystems_archive" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: column "repo_archive_id" of relation "subsystem_contributors" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "repo_archive_id" of relation "contributors" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: relation "usage" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+DB: constraint "fk_created_by_id" of relation "tenant_directory" does not exist, skipping
+DB: constraint "fk_updated_by_id" of relation "tenant_directory" does not exist, skipping
+WARNING: DB: relation "rule_tags" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: column "value" of relation "tags" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "metadata" of relation "tags" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "is_factory" of relation "tags" already exists, skipping (SQL State: 42701 - Error Code: 0)
+DB: constraint "name_category_id" of relation "tags" does not exist, skipping
+WARNING: DB: column "type" of relation "tag_category" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: relation "tag_category_mapping" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: relation "project_directory_group" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: column "group_meta" of relation "tenant_directory" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: relation "dashboards" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: relation "user_dashboard" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: column "meta_data" of relation "subsystem_analysis_queue" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "license_profile_id" of relation "subsystems" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: relation "team_dashboard_preferences" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+DB: function get_rules(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+Successfully applied 1 migration to schema "public" (execution time 00:00.272s)
+Migrated gamma
+NOTICE:  column "info" of relation "db_info" does not exist, skipping
+NOTICE:  column "tenant_db_info" of relation "tenant_db_info" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+Importing gamma functions
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:180: NOTICE:  function get_module_rules(pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:181: NOTICE:  function get_module_rules(pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:742: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:744: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:746: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:748: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:750: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:752: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:754: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:756: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:759: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:761: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+UPDATE 1
+DELETE 1
+
+-------------------------------------
+Patch application process completed.
+-------------------------------------
+Using below database configuration
+-------------------------------------
+Connection: postgres 18.156.1.119 5432
+Database: gamma corona
+-------------------------------------
+Database already exists
+Creating analytics and gamma baseline and running migration
+gamma checksum updating gamma
+UPDATE 1
+UPDATE 1
+Updated checksums in flyway_schema_history table for gamma
+NOTICE:  relation "schema_version" does not exist, skipping
+ALTER TABLE
+Migrating gamma DB on schema : public
+A more recent version of Flyway is available. Find out more about Flyway 11.3.4 at https://rd.gt/3rXiSlV
+
+Flyway OSS Edition 10.17.3 by Redgate
+
+See release notes here: https://rd.gt/416ObMi
+Database: jdbc:postgresql://18.156.1.119:5432/gamma (PostgreSQL 16.3)
+Successfully validated 42 migrations (execution time 00:00.171s)
+Current version of schema "public": 40
+Schema "public" is up to date. No migration necessary.
+Migrated gamma
+NOTICE:  column "info" of relation "db_info" does not exist, skipping
+NOTICE:  column "tenant_db_info" of relation "tenant_db_info" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+Importing gamma functions
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:180: NOTICE:  function get_module_rules(pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:181: NOTICE:  function get_module_rules(pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:742: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:744: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:746: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:748: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:750: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:752: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:754: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:756: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:759: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+psql:/opt/gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:761: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+CREATE FUNCTION
+UPDATE 1
+DELETE 0
+UPDATE 1
+
+***********************************************
+Running migration on schema # 1 (schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou)
+***********************************************
+
+Corona checksum updating corona
+UPDATE 1
+Updated checksums in flyway_schema_history table for corona
+ALTER TABLE
+Migrating corona DB on schema : schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou
+A more recent version of Flyway is available. Find out more about Flyway 11.3.4 at https://rd.gt/3rXiSlV
+
+Flyway OSS Edition 10.17.3 by Redgate
+
+See release notes here: https://rd.gt/416ObMi
+Database: jdbc:postgresql://18.156.1.119:5432/corona (PostgreSQL 16.3)
+Successfully validated 31 migrations (execution time 00:00.140s)
+Current version of schema "schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou": 28
+Migrating schema "schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou" with repeatable migration "current release"
+WARNING: DB: relation "starred_nodes" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+DB: constraint "subsysyem_id_node_id_un" of relation "starred_nodes" does not exist, skipping
+WARNING: DB: relation "idx_subsystem_node_user_id" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: column "is_starred" of relation "starred_nodes" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "issue_id" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "before_text" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "text_on_line" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "after_text" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "status" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "created_on_snapshot" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "updated_on_snapshot" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "fixed_on_snapshot" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "reopened_on_snapshot" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "existing_on_snapshot" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "suppressed_on_snapshot" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "sequence_number" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "start_column" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "end_column" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "additional_details" of relation "code_issues_occurrences" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "dashboard_id" of relation "starred_nodes" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "temp_starred" of relation "starred_nodes" already exists, skipping (SQL State: 42701 - Error Code: 0)
+DB: constraint "user_subsysyem_id_node_id_un" of relation "starred_nodes" does not exist, skipping
+WARNING: DB: column "metadata" of relation "snapshots" already exists, skipping (SQL State: 42701 - Error Code: 0)
+DB: Unique constraint dependencytypes_name_unq for columns name already exists on table dependencytypes.
+DB: Unique constraint ruletype_name_unique for columns name already exists on table ruletypes.
+DB: Unique constraint ruletype_acronym_unique for columns acronym already exists on table ruletypes.
+DB: Unique constraint subsystems_subsystem_uid_key for columns subsystem_uid already exists on table subsystems.
+DB: Unique constraint nodes_subsystem_id_key for columns subsystem_id, file_uid, uid already exists on table nodes.
+DB: Unique constraint node_types_name_key for columns name already exists on table node_types.
+DB: Unique constraint language_unique_languagename for columns language_name already exists on table languages.
+DB: Unique constraint measures_measurename_key for columns measurename already exists on table measures.
+DB: Unique constraint ratings_rating_key for columns rating already exists on table ratings.
+DB: Unique constraint node_file_fileid_compo_id_unique for columns file_id, component_id, kind, start_line, end_line, snapshot_id already exists on table node_file.
+DB: Unique constraint nodes_issues_issueid_key for columns issueid, nodeid already exists on table nodes_issues.
+DB: Unique constraint issues_subsystem_id_fk_key for columns subsystem_id, issueid, type already exists on table issues.
+DB: Unique constraint issues_subsystem_id_key for columns subsystem_id, issueid already exists on table issues.
+DB: Unique constraint uk_ci_auxmod_id_name for columns auxmod_id, name already exists on table code_issues.
+DB: Unique constraint auxmods_name_type_key for columns name, type already exists on table auxmods.
+DB: Unique constraint uk_subsystem_statistics for columns snapshotid, measurename already exists on table subsystem_statistics.
+DB: Unique constraint uk_nodes_tags for columns node_id, tag_uid already exists on table nodes_tags.
+DB: Unique constraint unique_key_lc for columns nodeid, startline, endline, snapshotid already exists on table line_coverage.
+DB: Unique constraint uk_relv_nodeid for columns snapshot_id, nodeid already exists on table relevance.
+DB: Unique constraint revision_subsystem_id_key for columns revision, subsystem_id, type already exists on table scmlog.
+DB: Unique constraint scmtypes_name for columns name already exists on table scmtypes.
+DB: Unique constraint unique_key_mc for columns nodeid, snapshotid, fileid already exists on table method_coverage.
+DB: Unique constraint issue_commit_mappping_ukey for columns snapshot_id, nodeid, scmid, issueid already exists on table issue_commit_mapping.
+DB: Unique constraint issue_types_name for columns name already exists on table issue_types.
+DB: Unique constraint author_component_mappings_ukey for columns author, component_name, subsystem_id already exists on table author_component_mappings.
+DB: Unique constraint uk_revreq_subsystemreviewid for columns subsystem_id, review_id already exists on table review_request.
+DB: Unique constraint snapshot_id_node_id_unique for columns snapshot_id, node_id already exists on table module_data.
+DB: Unique constraint unique_key_ut for columns test_node_id, test_parent_id, test_snapshot_id, test_time already exists on table unit_test.
+DB: Unique constraint labels_name_key for columns name already exists on table labels.
+DB: Unique constraint unique_starred_nodes for columns subsystem_id, node_id, user_id, dashboard_id already exists on table starred_nodes.
+WARNING: DB: column "metadata" of relation "nodes" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: relation "sbom" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: there is already a transaction in progress (SQL State: 25001 - Error Code: 0)
+WARNING: DB: relation "license_profiles" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: relation "license_rules" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+WARNING: DB: relation "license_profile_rules" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+DB: type "varying[]" does not exist, skipping
+DB: function get_code_issues_for_file(pg_catalog.int4,pg_catalog.int4,pg_catalog.bpchar,pg_catalog.varchar[],pg_catalog.int4[],pg_catalog.varchar,pg_catalog.int4,pg_catalog.int4,pg_catalog.int4[],pg_catalog.int4,pg_catalog.bpchar,pg_catalog.varchar[],pg_catalog.int4,pg_catalog.int4,pg_catalog.int4[]) does not exist, skipping
+Successfully applied 1 migration to schema "schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou" (execution time 00:00.535s)
+Migrated corona
+Importing analytics functions
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP AGGREGATE
+CREATE AGGREGATE
+DROP AGGREGATE
+CREATE AGGREGATE
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+UPDATE 1
+
+-------------------------------------
+corona patch application process completed.
+-------------------------------------
+
+-------------------------------------
+Patch application process completed.
+-------------------------------------
+[2025-03-11 12:27:57] [INFO] ===== MIGRATION SCRIPT STARTED =====
+[2025-03-11 12:27:57] [CONFIG] Gamma Database: gamma
+[2025-03-11 12:27:57] [CONFIG] Analytics Database: corona
+[2025-03-11 12:27:57] [STEP] 1/14 - Fetching tenant schema from Gamma DB
+[2025-03-11 12:27:57] [SUCCESS] Schema extracted: schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou
+[2025-03-11 12:27:57] [STEP 1/14: Checking if tags_mapping is empty...] 
+/opt/gamma/gamma_ui/dbscripts/gamma_corona_data_transfer.sh: line 88: [: SET 0: integer expression expected
+[2025-03-11 12:27:57] [STEP 1/14 Migration required - tags_mapping is empty] 
+[2025-03-11 12:27:57] [STEP] 2/14 - Creating rules_data table in Gamma DB
+[2025-03-11 12:27:57] [SUCCESS] Created rules_data table in Gamma DB
+[2025-03-11 12:27:57] [STEP] 3/14 - Checking rules_data table status
+[2025-03-11 12:27:57] [ACTION] Inserting data into rules_data (0 rows found)
+[2025-03-11 12:27:57] [SUCCESS] Inserted 7996 rows into rules_data
+[2025-03-11 12:27:57] [STEP] 4/14 - Creating rules_data table in Corona DB
+[2025-03-11 12:27:57] [SUCCESS] Created rules_data table in Corona DB
+[2025-03-11 12:27:57] [STEP] 4/14 - Creating component_tag table in Gamma DB
+[2025-03-11 12:27:57] [SUCCESS] Created component_tag table in Gamma DB
+[2025-03-11 12:27:57] [STEP] 5/14 - Checking Corona component_tag existence
+[2025-03-11 12:27:57] [ACTION] Populating component_tag table
+[2025-03-11 12:27:58] [SUCCESS] Component_tag data inserted
+[2025-03-11 12:27:58] [STEP] 5/14 - Creating component_tag table in Corona DB
+[2025-03-11 12:27:58] [SUCCESS] Created component_tag table in Corona DB
+[2025-03-11 12:27:58] [STEP] 6/16 - Processing Custom Rules Tables
+[2025-03-11 12:27:58] [ACTION] Creating/Checking gamma_subsystem_custom_rules in Gamma DB
+[2025-03-11 12:27:58] [SUCCESS] Gamma table operation: gamma_subsystem_custom_rules
+[2025-03-11 12:27:58] [ACTION] Creating/Checking schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou.gamma_subsystem_custom_rules in Corona DB
+[2025-03-11 12:27:58] [SUCCESS] Corona table operation: schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou.gamma_subsystem_custom_rules
+[2025-03-11 12:27:58] [ACTION] Inserting data into Gamma: gamma_subsystem_custom_rules
+[2025-03-11 12:27:58] [SUCCESS] Inserted 0 rows into Gamma: gamma_subsystem_custom_rules
+[2025-03-11 12:27:58] [STEP] 7/16 - Processing Module Options Tables
+[2025-03-11 12:27:58] [ACTION] Creating/Checking gamma_subsystem_custom_modules_options in Gamma DB
+[2025-03-11 12:27:58] [SUCCESS] Gamma table operation: gamma_subsystem_custom_modules_options
+[2025-03-11 12:27:58] [ACTION] Creating/Checking schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou.gamma_subsystem_custom_modules_options in Corona DB
+[2025-03-11 12:27:58] [SUCCESS] Corona table operation: schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou.gamma_subsystem_custom_modules_options
+[2025-03-11 12:27:58] [ACTION] Inserting data into Gamma: gamma_subsystem_custom_modules_options
+[2025-03-11 12:27:59] [SUCCESS] Inserted 0 rows into Gamma: gamma_subsystem_custom_modules_options
+[2025-03-11 12:27:59] [STEP] 8/14 - Starting main data migration
+[2025-03-11 12:27:59] [PROCESS] Starting migration for table: rules_data
+[2025-03-11 12:27:59] [ACTION] Migrating data for rules_data
+[2025-03-11 12:27:59] [DEBUG] Found 7996 rows to export
+[2025-03-11 12:27:59] [DEBUG] Exported 7996 rows to /opt/gamma/table_data.csv
+[2025-03-11 12:27:59] [SUCCESS] Imported 7996 rows into rules_data
+[2025-03-11 12:27:59] [PROCESS] Starting migration for table: gamma_subsystem_custom_rules
+[2025-03-11 12:27:59] [ACTION] Migrating data for gamma_subsystem_custom_rules
+[2025-03-11 12:27:59] [DEBUG] Found 0 rows to export
+[2025-03-11 12:28:00] [DEBUG] Exported 0 rows to /opt/gamma/table_data.csv
+[2025-03-11 12:28:00] [SUCCESS] Imported 0 rows into gamma_subsystem_custom_rules
+[2025-03-11 12:28:00] [PROCESS] Starting migration for table: gamma_subsystem_custom_modules_options
+[2025-03-11 12:28:00] [ACTION] Migrating data for gamma_subsystem_custom_modules_options
+[2025-03-11 12:28:00] [DEBUG] Found 0 rows to export
+[2025-03-11 12:28:00] [DEBUG] Exported 0 rows to /opt/gamma/table_data.csv
+[2025-03-11 12:28:00] [SUCCESS] Imported 0 rows into gamma_subsystem_custom_modules_options
+[2025-03-11 12:28:00] [PROCESS] Starting migration for table: component_tag
+[2025-03-11 12:28:00] [ACTION] Migrating data for component_tag
+[2025-03-11 12:28:00] [DEBUG] Found 8 rows to export
+[2025-03-11 12:28:01] [DEBUG] Exported 8 rows to /opt/gamma/table_data.csv
+[2025-03-11 12:28:01] [SUCCESS] Imported 8 rows into component_tag
+[2025-03-11 12:28:01] [STEP] 12/14 - Processing tags
+/opt/gamma/gamma_ui/dbscripts/gamma_corona_data_transfer.sh: line 386: [: SET 0: integer expression expected
+[2025-03-11 12:28:01] [SKIP] tags already contains SET 0 rows
+[2025-03-11 12:28:01] [STEP] 13/14 - Processing tag_category
+/opt/gamma/gamma_ui/dbscripts/gamma_corona_data_transfer.sh: line 386: [: SET 0: integer expression expected
+[2025-03-11 12:28:01] [SKIP] tag_category already contains SET 0 rows
+[2025-03-11 12:28:01] [STEP] 14/14 - Processing tag_category_mapping
+/opt/gamma/gamma_ui/dbscripts/gamma_corona_data_transfer.sh: line 386: [: SET 0: integer expression expected
+[2025-03-11 12:28:01] [SKIP] tag_category_mapping already contains SET 0 rows
+[2025-03-11 12:28:01] [INFO] Temporary file /opt/gamma/table_data.csv deleted successfully.
+[2025-03-11 12:28:01] [SUCCESS] ===== MIGRATION COMPLETED =====
+[2025-03-11 12:28:01] [INFO] Total runtime: 4 seconds
+[2025-03-11 12:28:01] [INFO] Detailed log saved to: /opt/gamma/migration_log.txt
+Using below configuration
+-------------------------------------
+Connection: postgres postgres 18.156.1.119 5432
+Database: gamma
+Using CORONA_HOME: /opt/gamma/corona
+-------------------------------------
+Running the data-mapper tool
+Data mapper tool execution completed.
+[2025-03-11 12:28:52] =============== STARTING MIGRATION ===============
+[2025-03-11 12:28:52] STEP 1: Fetching tenant schema from Gamma DB...
+[2025-03-11 12:28:52] Schema found: schema_c3acda99b4ee4c22426e00d65f72a86c_lrhoyxoou
+[2025-03-11 12:28:52] STEP 2: Checking schema existence in Analytics DB...
+[2025-03-11 12:28:52] Schema verified in Analytics DB
+[2025-03-11 12:28:52] STEP 3: Checking if tags_mapping is empty...
+/opt/gamma/gamma_ui/dbscripts/gamma_kpi_tag_mapping_and_cleanup.sh: line 60: [: SET 0: integer expression expected
+[2025-03-11 12:28:52] Migration required - tags_mapping is empty
+[2025-03-11 12:28:52] STEP 4: Creating corona_module_tags table...
+SET
+CREATE TABLE
+[2025-03-11 12:28:52] STEP 5: - Checking corona_module_tags status
+/opt/gamma/gamma_ui/dbscripts/gamma_kpi_tag_mapping_and_cleanup.sh: line 78: [: SET 0: integer expression expected
+[2025-03-11 12:28:52] SKIP
+[2025-03-11 12:28:52] STEP 6: Updating tags_mapping...
+SET
+UPDATE 0
+[2025-03-11 12:28:52] STEP 7: Processing custom modules...
+/opt/gamma/gamma_ui/dbscripts/gamma_kpi_tag_mapping_and_cleanup.sh: line 140: [: SET 0: integer expression expected
+[2025-03-11 12:28:52] STEP 8: Processing custom rules...
+/opt/gamma/gamma_ui/dbscripts/gamma_kpi_tag_mapping_and_cleanup.sh: line 159: [: SET 0: integer expression expected
+[2025-03-11 12:28:52] STEP 9: Migrating KPI data...
+SET
+INSERT 0 1
+[2025-03-11 12:29:01] Backing up kpi_language_module_rules...
+[2025-03-11 12:29:01] Backing up language...
+[2025-03-11 12:29:02] Backing up language_module...
+[2025-03-11 12:29:02] Backing up module...
+[2025-03-11 12:29:02] Backing up language_module_rules...
+[2025-03-11 12:29:02] Backing up rule_tags...
+[2025-03-11 12:29:03] Backing up kpi...
+[2025-03-11 12:29:03] Backing up tags...
+[2025-03-11 12:29:03] Backing up tag_category...
+[2025-03-11 12:29:03] Backing up tag_category_mapping...
+[2025-03-11 12:29:03] =============== CLEANUP PHASE ===============
+[2025-03-11 12:29:03] Cleaning Analytics DB...
+SET
+DROP TABLE
+[2025-03-11 12:29:04] Cleaning Gamma DB...
+DROP TABLE
+[2025-03-11 12:29:04] =============== MIGRATION COMPLETED SUCCESSFULLY ===============
+UI starting
+UI started
+GWS started
+Scanbox started
+Application is up and running

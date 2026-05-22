@@ -1,0 +1,647 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250109105318
+Username: EC2AMAZ-LCTUJFN\Administrator
+RunAs User: EC2AMAZ-LCTUJFN\Administrator
+Configuration Name: 
+Machine: EC2AMAZ-LCTUJFN (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Downloads\BrowserStackCodeQuality_windows_1.9.22.0\browserstack_cq_WindowsInstaller\setup\\setupRun\setup.ps1
+Process ID: 72
+PSVersion: 5.1.17763.6640
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.6640
+BuildVersion: 10.0.17763.6640
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\ProgramData\Gamma\installer.log
+Checking if Gamma folder already exists at path  C:\ProgramData\Gamma
+
+
+    Directory: C:\Users\Administrator\Downloads\BrowserStackCodeQuality_windows_1.9.22.0\browserstack_cq_WindowsInstall
+    er\prerequisites
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/9/2025  10:53 AM                installers
+
+----------------------------
+ system requirements checking
+----------------------------
+No [GIT] version detected.
+proceeding with git install ...
+running C:\Users\Administrator\Downloads\BrowserStackCodeQuality_windows_1.9.22.0\browserstack_cq_WindowsInstaller\prerequisites\gammaPreReqInstallers\Git-2.35.3-64-bit.exe
+git installation done
+
+
+----------------------------
+  Retrieving node-js installer file.
+----------------------------
+
+----------------------------
+ nodejs installation
+----------------------------
+[NODE] running C:\Users\Administrator\Downloads\BrowserStackCodeQuality_windows_1.9.22.0\browserstack_cq_WindowsInstaller\prerequisites\gammaPreReqInstallers\node-v10.21.0-x64.msi
+Installing prerequisites required for Gamma
+d-----         1/9/2025  10:55 AM                installers
+Installing PostgreSQL Database.
+PostgreSQL Database Installed Sucesffully.
+Installing 7 Zip
+Successfully Installed 7 Zip
+Checking if Java is already installed
+Java not installed. Installing Java
+Setting up JRE_HOME and Path variable for Java.
+Java Installed Sucessfully.
+Installing SlickSVN client
+Successfully Installed SlickSVN client
+Installing Code Check for C++
+C:\Users\Administrator\Downloads\BrowserStackCodeQuality_windows_1.9.22.0\browserstack_cq_WindowsInstaller\prerequisites\gammaPreReqInstallers\cppcheck-2.8-x64-Setup.msi
+
+
+    Directory: C:\ProgramData\Gamma\GammaTools
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/9/2025  11:07 AM                Python3.6.5
+Python installed successfully.
+Installing PHP related components.
+PHP Components installed sucessfully.
+Installing GO Language.
+GO Language Installed Sucessfully.
+Installing Dotnet SDK 3
+DotNet SDK 3.0.100 Installed Sucesffully.
+Completed Installing prerequisites required for Gamma
+Grant permission to the folder
+Completed Granting permission to the folder
+Create Data folder
+
+
+    Directory: C:\ProgramData\Gamma\data
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/9/2025  11:15 AM                TFS-SDK
+Create Logs folder
+
+
+    Directory: C:\ProgramData\Gamma
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/9/2025  11:15 AM                logs
+Completed Creating Logs folder
+Copy all gamma packages to the Gamma Folder.
+Completed Copy all gamma packages to the Gamma Folder.
+Copying the Auto download corona-archive.tar.gz file under gammaVersionFolder\custom_packages\corona_packages
+d-----         1/9/2025  11:16 AM                custom_packages
+
+
+    Directory: C:\ProgramData\Gamma\custom_packages
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/9/2025  11:16 AM                corona_packages
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 1451517599 bytes (1385 MiB)
+
+Extracting archive: C:\ProgramData\Gamma\custom_packages\corona_packages\corona-archive.tar.gz
+--
+Path = C:\ProgramData\Gamma\custom_packages\corona_packages\corona-archive.tar.gz
+Type = gzip
+Headers Size = 10
+
+Everything is Ok
+
+Size:       2473256960
+Compressed: 1451517599
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 2473256960 bytes (2359 MiB)
+
+Extracting archive: C:\ProgramData\Gamma\custom_packages\corona_packages\corona-archive.tar
+--
+Path = C:\ProgramData\Gamma\custom_packages\corona_packages\corona-archive.tar
+Type = tar
+Physical Size = 2473256960
+Headers Size = 24744960
+Code Page = UTF-8
+
+Everything is Ok
+
+Folders: 2426
+Files: 36071
+Size:       2438403582
+Compressed: 2473256960
+Completed copying the existing corona-archive.tar.gz file under gammaVersionFolder\custom_packages\corona_packages
+Unpack corona-archive.tar.gz file under packages folder
+
+
+    Directory: C:\ProgramData\Gamma
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/9/2025  11:17 AM                corona
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 1249581388 bytes (1192 MiB)
+
+Extracting archive: C:\ProgramData\Gamma\packages\corona-archive.tar.gz
+--
+Path = C:\ProgramData\Gamma\packages\corona-archive.tar.gz
+Type = gzip
+Headers Size = 10
+
+Everything is Ok
+
+Size:       1785948160
+Compressed: 1249581388
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 1785948160 bytes (1704 MiB)
+
+Extracting archive: C:\ProgramData\Gamma\corona-archive.tar
+--
+Path = C:\ProgramData\Gamma\corona-archive.tar
+Type = tar
+Physical Size = 1785948160
+Headers Size = 18941440
+Code Page = UTF-8
+
+Everything is Ok
+
+Folders: 2158
+Files: 29214
+Size:       1758694001
+Compressed: 1785948160
+Completed unpacking corona-archive.tar.gz files under packages folder
+Unpack gamma_dist.tar.gz files under packages folder
+d-----         1/9/2025  11:18 AM                gamma_ui
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 249738640 bytes (239 MiB)
+
+Extracting archive: C:\ProgramData\Gamma\packages\gamma_dist.tar.gz
+--
+Path = C:\ProgramData\Gamma\packages\gamma_dist.tar.gz
+Type = gzip
+Headers Size = 10
+
+Everything is Ok
+
+Size:       501934080
+Compressed: 249738640
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 501934080 bytes (479 MiB)
+
+Extracting archive: C:\ProgramData\Gamma\gamma_ui\gamma_dist.tar
+--
+Path = C:\ProgramData\Gamma\gamma_ui\gamma_dist.tar
+Type = tar
+Physical Size = 501934080
+Headers Size = 712192
+Code Page = UTF-8
+
+Everything is Ok
+
+Folders: 228
+Files: 1137
+Size:       500917345
+Compressed: 501934080
+Unpack tomcat file under AppacheTomcat folder
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 10602022 bytes (11 MiB)
+
+Extracting archive: C:\ProgramData\Gamma\ApacheTomcat\tomcat.zip
+--
+Path = C:\ProgramData\Gamma\ApacheTomcat\tomcat.zip
+Type = zip
+Physical Size = 10602022
+
+Everything is Ok
+
+Folders: 112
+Files: 637
+Size:       16268338
+Compressed: 10602022
+d-----         1/9/2025  11:18 AM                tomcat
+Completed unpacking tomcat file under ApacheTomcat folder
+Move gws.war in tomcat/webapps
+Completed moving gws.war in tomcat/webapps
+Delete packages folder and ApacheTomcat folder
+Completed deleting packages folder
+Installing PHP components.
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 24926397 bytes (24 MiB)
+
+Extracting archive: C:\php.tar.gz
+--
+Path = C:\php.tar.gz
+Type = gzip
+Headers Size = 18
+
+Everything is Ok
+
+Size:       72565760
+Compressed: 24926397
+
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+
+Scanning the drive for archives:
+1 file, 72565760 bytes (70 MiB)
+
+Extracting archive: C:\php.tar
+--
+Path = C:\php.tar
+Type = tar
+Physical Size = 72565760
+Headers Size = 1160192
+Code Page = UTF-8
+
+Everything is Ok
+
+Folders: 324
+Files: 1644
+Size:       70974116
+Compressed: 72565760
+Successfully installed PHP components.
+Moving tools to gamma_ui folder from corona folder
+Completed moving tools to gamma_ui folder
+Setting Code Quality Product version.
+
+Set all required environment variable
+1
+C:\Users\Administrator\AppData\Roaming\npm\jshint -> C:\Users\Administrator\AppData\Roaming\npm\node_modules\jshint\bin\
+jshint
++ jshint@2.9.5
+added 33 packages from 18 contributors in 2.516s
+C:\Users\Administrator\AppData\Roaming\npm\tslint -> C:\Users\Administrator\AppData\Roaming\npm\node_modules\tslint\bin\
+tslint
+C:\Users\Administrator\AppData\Roaming\npm\tsc -> C:\Users\Administrator\AppData\Roaming\npm\node_modules\typescript\bin
+\tsc
+C:\Users\Administrator\AppData\Roaming\npm\tsserver -> C:\Users\Administrator\AppData\Roaming\npm\node_modules\typescrip
+t\bin\tsserver
++ tslint-microsoft-contrib@5.0.3
++ tslint@5.9.1
++ typescript@2.8.1
+added 47 packages from 24 contributors in 4.823s
+C:\Users\Administrator\AppData\Roaming\npm\eslint -> C:\Users\Administrator\AppData\Roaming\npm\node_modules\eslint\bin\
+eslint.js
++ eslint@4.19.1
+added 152 packages from 135 contributors in 9.187s
+C:\Users\Administrator\AppData\Roaming\npm\solium -> C:\Users\Administrator\AppData\Roaming\npm\node_modules\solium\bin\
+solium.js
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\solium\node_modules\chokidar\node_modules\
+fsevents):
+npm WARN network SKIPPING OPTIONAL DEPENDENCY: request to https://registry.npmjs.org/fsevents failed, reason: connect ET
+IMEDOUT 104.16.2.35:443
+
++ solium@1.1.8
+added 153 packages from 332 contributors in 142.37s
+npm ERR! code ETIMEDOUT
+npm ERR! errno ETIMEDOUT
+npm ERR! network request to https://registry.npmjs.org/strip-json-comments failed, reason: connect ETIMEDOUT 104.16.2.35
+:443
+npm ERR! network This is a problem related to network connectivity.
+npm ERR! network In most cases you are behind a proxy or have bad network settings.
+npm ERR! network
+npm ERR! network If you are behind a proxy, please make sure that the
+npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Administrator\AppData\Roaming\npm-cache\_logs\2025-01-09T11_24_21_960Z-debug.log
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Administrator\AppData\Roaming\npm-cache\_logs\2025-01-09T11_35_30_028Z-debug.log
++ node-windows@0.1.14
+added 5 packages from 8 contributors in 0.61s
+
+Processing c:\users\administrator\downloads\browserstackcodequality_windows_1.9.22.0\browserstack_cq_windowsinstaller\prerequisites\gammaprere
+qinstallers\pylint\pylint-1.9.1-py2.py3-none-any.whl
+Collecting astroid<2.0,>=1.6 (from pylint==1.9.1)
+Collecting isort>=4.2.5 (from pylint==1.9.1)
+Collecting colorama; sys_platform == "win32" (from pylint==1.9.1)
+Collecting six (from pylint==1.9.1)
+Collecting mccabe (from pylint==1.9.1)
+Collecting wrapt (from astroid<2.0,>=1.6->pylint==1.9.1)
+Collecting lazy-object-proxy (from astroid<2.0,>=1.6->pylint==1.9.1)
+Installing collected packages: six, wrapt, lazy-object-proxy, astroid, isort, colorama, mccabe, pylint
+  Running setup.py install for wrapt ... done
+Successfully installed astroid-1.6.5 colorama-0.3.9 isort-4.3.4 lazy-object-proxy-1.3.1 mccabe-0.6.1 pylint-1.9.1 six-1.11.0 wrapt-1.10.11
+postgresql-x64-13 already running!
+Backup of Gamma and Corona database from PostgreSQL 9.6 exists. Restoring it for PostgreSQL 13
+Running the Database script
+C://ProgramData//Gamma//gamma_ui//dbscripts//init_db_Windows.sh: illegal option -- p
+Using below database configuration
+-------------------------------------
+Connection: postgres postgres localhost 5432
+Database: gamma corona
+-------------------------------------
+Database does not exist, Creating gamma DB
+Creating analytics and gamma baseline and running migration
+NOTICE:  relation "schema_version" does not exist, skipping
+ALTER TABLE
+Migrating gamma DB on schema : public
+Flyway Community Edition 8.5.8 by Redgate
+See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.8
+
+Database: jdbc:postgresql://localhost:5432/gamma (PostgreSQL 13.10)
+Successfully validated 41 migrations (execution time 00:00.580s)
+Creating Schema History table "public"."flyway_schema_history" ...
+Current version of schema "public": << Empty Schema >>
+Migrating schema "public" to version "1"
+Migrating schema "public" to version "2 - 0.9 release"
+Migrating schema "public" to version "3 - 1.0 release"
+WARNING: DB: column "tag_color" of relation "tags" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "subdomain" of relation "tenant" already exists, skipping (SQL State: 42701 - Error Code: 0)
+Migrating schema "public" to version "4 - 1.0.51 release"
+Migrating schema "public" to version "5 - 1.1.0 release"
+DB: constraint "qp_subsystem_id_fkey" of relation "subsystems" does not exist, skipping
+Migrating schema "public" to version "6 - 1.1.5 release"
+Migrating schema "public" to version "7 - 1.2.0 release"
+WARNING: DB: column "task_updated_date" of relation "task" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: extension "dblink" already exists, skipping (SQL State: 42710 - Error Code: 0)
+DB: constraint "tenant_db_info_subdomain_key" of relation "tenant_db_info" does not exist, skipping
+DB: constraint "qp_tenant_id_fkey" of relation "quality_profile" does not exist, skipping
+DB: constraint "kpi_tenant_id_fkey" of relation "kpi" does not exist, skipping
+Migrating schema "public" to version "8 - 1.2.4.1 release"
+Migrating schema "public" to version "9 - 1.2.6.0 release"
+Migrating schema "public" to version "10 - 1.3.0.0 release"
+Migrating schema "public" to version "11 - 1.3.2.0 release"
+Migrating schema "public" to version "12 - 1.4.0.0 release"
+Migrating schema "public" to version "13 - 1.4.2.0 release"
+DB: constraint "fk_tenant_id" of relation "task" does not exist, skipping
+Migrating schema "public" to version "14 - 1.4.3.0 release"
+DB: constraint "permission_name" of relation "permissions" does not exist, skipping
+DB: constraint "role_permission_id" of relation "role_permission" does not exist, skipping
+Migrating schema "public" to version "15 - 1.4.4.0 release"
+Migrating schema "public" to version "16 - 1.5.1.0 release"
+Migrating schema "public" to version "17 - 1.6.0.0 release"
+DB: constraint "fk_group_id" of relation "permissions" does not exist, skipping
+WARNING: DB: column "index_id" of relation "permission_group" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "is_migrated" of relation "tenant" already exists, skipping (SQL State: 42701 - Error Code: 0)
+WARNING: DB: column "type" of relation "tenant" already exists, skipping (SQL State: 42701 - Error Code: 0)
+Migrating schema "public" to version "18 - 1.6.1.0 release"
+DB: table "webhooks_subsystems" does not exist, skipping
+DB: column "enable_hook" of relation "subsystems" does not exist, skipping
+DB: constraint "webhooks_repository_url_key" of relation "webhooks" does not exist, skipping
+Migrating schema "public" to version "19 - 1.6.1.2 release"
+Migrating schema "public" to version "20 - 1.7.0.0 release"
+Migrating schema "public" to version "21 - 1.7.0.3 release"
+Migrating schema "public" to version "22 - 1.7.3.0 release"
+DB: constraint "fk_directory_id" of relation "users" does not exist, skipping
+DB: constraint "fk_external_id" of relation "users" does not exist, skipping
+DB: constraint "fk_tenant_directory_name" of relation "tenant_directory" does not exist, skipping
+Migrating schema "public" to version "23 - 1.7.6.0 release"
+DB: constraint "unq_tenant_id_external_id" of relation "users" does not exist, skipping
+Migrating schema "public" to version "24 - 1.7.8.0 release"
+Migrating schema "public" to version "25 - 1.7.9.0 release"
+Migrating schema "public" to version "26 - 1.7.10.0 release"
+Migrating schema "public" to version "27 - 1.8.0.0 release"
+Migrating schema "public" to version "28 - 1.8.1.0 release"
+Migrating schema "public" to version "29 - 1.8.3.0 release"
+Migrating schema "public" to version "30 - 1.8.4.0 release"
+DB: constraint "review_request_queue_unique" of relation "review_request_queue" does not exist, skipping
+Migrating schema "public" to version "31 - 1.9.0.0 release"
+Migrating schema "public" to version "32 - 1.9.1.0 release"
+Migrating schema "public" to version "33 - 1.9.2.0 release"
+Migrating schema "public" to version "34 - 1.9.4.0 release"
+Migrating schema "public" to version "35 - 1.9.5.0 release"
+Migrating schema "public" to version "36 - 1.9.5.1 release"
+Migrating schema "public" to version "37 - 1.9.6.0 release"
+Migrating schema "public" to version "38 - 1.9.9.0 release"
+Migrating schema "public" to version "39 - 1.9.10.0 release"
+Migrating schema "public" to version "40 - 1.9.10.1 release"
+Migrating schema "public" with repeatable migration "current release"
+DB: constraint "subsystem_contributors_unique_id" of relation "subsystem_contributors" does not exist, skipping
+Successfully applied 41 migrations to schema "public", now at version v40 (execution time 00:03.665s)
+Migrated gamma
+ALTER TABLE
+
+
+ALTER TABLE
+Importing gamma functions
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:54: NOTICE:  function add_user(pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist,
+ skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:138: NOTICE:  function get_array_of_users_global_role_wise(pg_catalog.int4,p
+g_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:179: NOTICE:  function get_issuewise_taskcount(text[]) does not exist, skipp
+ing
+DROP FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:198: NOTICE:  function get_kpi(pg_catalog.int4,pg_catalog.varchar,pg_catalog
+.varchar,pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:278: NOTICE:  function get_rules(pg_catalog.varchar,pg_catalog.varchar,pg_ca
+talog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:352: NOTICE:  function get_rules_count(pg_catalog.varchar,pg_catalog.varchar
+[],pg_catalog.varchar[],pg_catalog.varchar[],pg_catalog.varchar,pg_catalog.varchar,pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:404: NOTICE:  function get_loc_utilisation(pg_catalog.varchar) does not exis
+t, skipping
+DROP FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:443: NOTICE:  function get_module_rules(pg_catalog.int4) does not exist, ski
+pping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:444: NOTICE:  function get_module_rules(pg_catalog.int4,pg_catalog.int4) doe
+s not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:445: NOTICE:  function get_module_rules(pg_catalog.int4,pg_catalog.varchar)
+does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:512: NOTICE:  function get_only_factory_rules(pg_catalog.int4,pg_catalog.var
+char) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:513: NOTICE:  function get_only_factory_rules(pg_catalog.int4,pg_catalog.var
+char,pg_catalog.varchar[],pg_catalog.varchar[],pg_catalog.varchar[],pg_catalog.varchar,pg_catalog.int4,pg_catalog.int4) does not exist, skippi
+ng
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:822: NOTICE:  function get_rules_details(pg_catalog.varchar,pg_catalog.int4,
+pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:870: NOTICE:  function get_subsystem_modules(pg_catalog.int4) does not exist
+, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:871: NOTICE:  function get_subsystem_modules(pg_catalog.varchar) does not ex
+ist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:962: NOTICE:  function get_team_details_from_project(pg_catalog.int4) does n
+ot exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1010: NOTICE:  function get_tenant_summary_details(pg_catalog.int4) does not
+ exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1227: NOTICE:  function get_user_list(pg_catalog.varchar,pg_catalog.int4,pg_
+catalog.varchar,pg_catalog.varchar,pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1266: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does n
+ot exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1268: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1270: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1272: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1274: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1276: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1278: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1280: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_cata
+log.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1283: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool,pg_catalog.va
+rchar) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1285: NOTICE:  function register_tenant(pg_catalog.varchar,pg_catalog.varcha
+r,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.varchar,pg_catalog.bool,pg_catalog.varchar,pg_catalog.bool) does not exi
+st, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1420: NOTICE:  function update_custom_rule(pg_catalog.varchar,pg_catalog.var
+char,pg_catalog.varchar,jsonb) does not exist, skipping
+DROP FUNCTION
+psql:C:/ProgramData/Gamma/gamma_ui/dbscripts/gamma/gamma_func.sql:1421: NOTICE:  function update_custom_rule(pg_catalog.varchar,pg_catalog.var
+char,pg_catalog.varchar,jsonb,pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+DELETE 0
+
+-------------------------------------
+Patch application process completed.
+-------------------------------------
+Last exit code for db
+1
+Running database scripts failed. Retries left - 2
+Last exit code for db
+1
+Running database scripts failed. Retries left - 1
+Last exit code for db
+1
+Running database scripts failed. Retries left - 0
+Code Quality installation failed while running database scripts. Please contact team BrowserStack at https://www.browserstack.com/contact for further assistance.
+Running the Database script
+Using below configuration
+-------------------------------------
+Connection: postgres postgres localhost 5432
+Database: gamma
+Using CORONA_HOME: C:\ProgramData\Gamma\corona
+-------------------------------------
+Copying auxmod from C:\ProgramData\Gamma\corona/auxmod to C:\ProgramData\Gamma/gamma_ui/dbscripts/..
+Copying completed.
+Running the data mapper tool
+Data mapper tool execution completed.
+
+Starting Tomcat server
+Tomcat started
+Installing Scanbox as service
+GammaService is stopped, preparing to start...
+WARNING: Waiting for service 'GammaService (GammaService)' to start...
+WARNING: Waiting for service 'GammaService (GammaService)' to start...
+GammaService - Running
+Successfully Installed Scanbox windows service.
+
+
+    Directory: C:\ProgramData\Gamma\GammaTools
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/9/2025  11:47 AM                nssm
+Installing Gamma UI service..
+Service "Gamma_UI_Service" installed successfully!
+Set parameter "Description" for service "Gamma_UI_Service".
+Set parameter "AppEnvironmentExtra" for service "Gamma_UI_Service".
+Set parameter "AppStdout" for service "Gamma_UI_Service".
+Starting Gamma UI service..
+Gamma_UI_Service is stopped, preparing to start...
+WARNING: Waiting for service 'Gamma_UI_Service (Gamma_UI_Service)' to start...
+Gamma_UI_Service - Running
+Gamma installer completed successfully.
+You can find installtion logs at C:\ProgramData\Gamma\installer.log location.
+**********************
+Windows PowerShell transcript end
+End time: 20250109114745
+**********************
